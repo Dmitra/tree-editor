@@ -1,0 +1,40 @@
+{
+  "private": true,
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.0.3",
+    "bootstrap-icons": "^1.10.5",
+    "clsx": "^2.0.0",
+    "d3-force": "^3.0.0",
+    "d3-hierarchy": "^3.1.2",
+    "lodash": "^4.17.21",
+    "react": "^18.0.0",
+    "react-bootstrap": "1.6.1",
+    "react-dom": "^18.0.0",
+    "react-pie-menu": "^0.3.3",
+    "reactflow": "11.4.0",
+    "styled-components": "^6.0.5",
+    "vite": "^4.4.7"
+  },
+  "devDependencies": {
+    "vite-plugin-load-css-module": "^0.1.4"
+  },
+  "main": "/index.jsx",
+  "name": "case-management",
+  "author": "Adrian Dmitra",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

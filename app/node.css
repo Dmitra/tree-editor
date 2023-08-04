@@ -1,0 +1,20 @@
+:local(.styles) {
+  padding: 34px 0 0 0;
+
+  & i {
+    position: absolute;
+    top: 8px;
+    left: calc(50% - 12px);
+    font-size: 24px;
+    background-color: #ededed;
+  }
+
+  & .react-flow__handle {
+    visibility: hidden;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+  }
+}

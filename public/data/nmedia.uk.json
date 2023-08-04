@@ -1,0 +1,191 @@
+{
+  "nodes": [
+    {
+      "id": "nmedia.uk",
+      "type": "site",
+      "group": 0,
+      "host": [
+        {
+          "name": "Cloudflare, Inc. (CLOUD14)"
+        }
+      ]
+    },
+    {
+      "id": "4kiptvuk.com",
+      "type": "site",
+      "group": 2,
+      "host": [
+        {
+          "name": "Cloudflare, Inc. (CLOUD14)"
+        }
+      ],
+      "whois": [
+        {
+          "name": "Redacted for Privacy",
+          "address": "Kalkofnsvegur 2"
+        }
+      ]
+    },
+    {
+      "id": "4kmediauk.com",
+      "type": "site",
+      "group": 3
+    },
+    {
+      "id": "4kmediauk.live",
+      "type": "site",
+      "group": 4,
+      "host": [
+        {
+          "name": "Cloudflare, Inc. (CLOUD14)"
+        }
+      ],
+      "whois": [
+        {
+          "name": "REDACTED FOR PRIVACY",
+          "address": "REDACTED FOR PRIVACY"
+        }
+      ]
+    },
+    {
+      "id": "4kspeedmediauk.com",
+      "type": "site",
+      "group": 5,
+      "host": [
+        {
+          "name": "Cloudflare, Inc. (CLOUD14)"
+        }
+      ]
+    },
+    {
+      "id": "abmediauk.com",
+      "type": "site",
+      "group": 6,
+      "whois": [
+        {
+          "name": "Redacted for Privacy",
+          "address": "Kalkofnsvegur 2"
+        }
+      ]
+    },
+    {
+      "id": "aceserversuk.com",
+      "type": "site",
+      "group": 7
+    },
+    {
+      "id": "afinititv.com",
+      "type": "site",
+      "group": 8
+    },
+    {
+      "id": "alphatvuk.com",
+      "type": "site",
+      "group": 9,
+      "host": [
+        {
+          "name": "Cloudflare, Inc. (CLOUD14)"
+        }
+      ],
+      "whois": [
+        {
+          "name": "Redacted for Privacy",
+          "address": "Kalkofnsvegur 2"
+        }
+      ]
+    },
+    {
+      "id": "ayeemedia.com",
+      "type": "site",
+      "group": 10,
+      "host": [
+        {
+          "name": "Cloudflare, Inc. (CLOUD14)"
+        }
+      ]
+    },
+    {
+      "id": "barrytvuk.com",
+      "type": "site",
+      "group": 11,
+      "host": [
+        {
+          "name": "Cloudflare, Inc. (CLOUD14)"
+        }
+      ]
+    },
+    {
+      "id": "bingotvuk.com",
+      "type": "site",
+      "group": 12,
+      "host": [
+        {
+          "name": "Cloudflare, Inc. (CLOUD14)"
+        }
+      ],
+      "whois": [
+        {
+          "name": "Redacted for Privacy",
+          "address": "Kalkofnsvegur 2"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "source": "nmedia.uk",
+      "target": "4kiptvuk.com",
+      "context": "google-tag-manager tag TagID identified on Sunday 13, June 2021"
+    },
+    {
+      "source": "nmedia.uk",
+      "target": "4kmediauk.com",
+      "context": "google-tag-manager tag TagID identified on Sunday 13, June 2021"
+    },
+    {
+      "source": "nmedia.uk",
+      "target": "4kmediauk.live",
+      "context": "google-tag-manager tag TagID identified on Sunday 13, June 2021"
+    },
+    {
+      "source": "nmedia.uk",
+      "target": "4kspeedmediauk.com",
+      "context": "google-tag-manager tag TagID identified on Sunday 13, June 2021"
+    },
+    {
+      "source": "nmedia.uk",
+      "target": "abmediauk.com",
+      "context": "google-tag-manager tag TagID identified on Sunday 13, June 2021"
+    },
+    {
+      "source": "nmedia.uk",
+      "target": "aceserversuk.com",
+      "context": "google-tag-manager tag TagID identified on Sunday 13, June 2021"
+    },
+    {
+      "source": "nmedia.uk",
+      "target": "afinititv.com",
+      "context": "google-tag-manager tag TagID identified on Sunday 13, June 2021"
+    },
+    {
+      "source": "nmedia.uk",
+      "target": "alphatvuk.com",
+      "context": "google-tag-manager tag TagID identified on Sunday 13, June 2021"
+    },
+    {
+      "source": "nmedia.uk",
+      "target": "ayeemedia.com",
+      "context": "google-tag-manager tag TagID identified on Sunday 13, June 2021"
+    },
+    {
+      "source": "nmedia.uk",
+      "target": "barrytvuk.com",
+      "context": "google-tag-manager tag TagID identified on Sunday 13, June 2021"
+    },
+    {
+      "source": "barrytvuk.com",
+      "target": "bingotvuk.com",
+      "context": "google-tag-manager tag TagID identified on Sunday 13, June 2021"
+    }
+  ]
+}

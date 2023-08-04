@@ -1,0 +1,44 @@
+{
+  "nodes": [
+    {
+      "id": "John Smith",
+      "type": "person",
+      "Phone": [
+        {
+          "Number": "555-2121"
+        }
+      ],
+      "Email": [
+        {
+          "Contact": "fakeemail@fakeemail.com"
+        }
+      ]
+    },
+    {
+      "id": "BarryTV HQ",
+      "type": "business",
+      "Phone": [
+        {
+          "Number": "555-2121"
+        }
+      ],
+      "Email": [
+        {
+          "Contact": "fakeemail@fakeemail.com"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "source": "barrytvuk.com",
+      "target": "John Smith",
+      "context": "People search executed on July 1, 2023"
+    },
+    {
+      "source": "barrytvuk.com",
+      "target": "BarryTV HQ",
+      "context": "Incorporation records files with state on June 24th, 2022"
+    }
+  ]
+}

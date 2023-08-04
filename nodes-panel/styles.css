@@ -1,0 +1,29 @@
+:local(.styles) {
+  color: white;
+  top: 4px;
+  left: 4px;
+  z-index: 1;
+  padding: 4px;
+  border-right: 1px solid #222138;
+  width: 200px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  background-color: #46445a;
+
+  .node {
+    background: #222138;
+    color: #fff;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 8px;
+  }
+
+  .node:hover {
+    box-shadow: rgba(0, 0, 0, 0.533) 0px 0px 9px 0px;
+  }
+
+  .node i {
+    padding-right: 8px;
+  }
+}

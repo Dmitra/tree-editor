@@ -1,0 +1,19 @@
+:local(.styles) {
+  display: flex;
+  height: 100%;
+
+  & .react-flow {
+    background-color: #ededed;
+  }
+
+  & .sidebar-right {
+    width: 200px;
+    background-color: #e3e3eb;
+
+    > .react-flow__minimap {
+      position: inherit;
+      margin: 0;
+      background-color: #989898;
+    }
+  }
+}
