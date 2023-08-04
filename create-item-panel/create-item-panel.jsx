@@ -4,7 +4,7 @@ import React from 'react'
 import types from '../app/node-types'
 import { styles } from './styles.css'
 
-export default function NodesPanel () {
+export default function CreateItemPanel () {
   function onDragStart (type) {
     return e => {
       e.dataTransfer.setData('nodeType', type)

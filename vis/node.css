@@ -1,6 +1,15 @@
 :local(.styles) {
   padding: 34px 0 0 0;
 
+  &.dropzone {
+    background-color: #e3e3eb;
+    box-shadow: 0 0 9px #e3e3eb;
+
+    & i {
+      background-color: #e3e3eb;
+    }
+  }
+
   & i {
     position: absolute;
     top: 8px;

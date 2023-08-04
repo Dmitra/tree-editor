@@ -1,4 +1,3 @@
-
 class Api {
   async load (id) {
     const response = await fetch(`data/${id}.json`)
