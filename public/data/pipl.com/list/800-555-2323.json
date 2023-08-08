@@ -1,10 +1,19 @@
 [{
   "id": "Igor Yurtaev",
-  "type": "person"
+  "type": "person",
+  "title": "PR Manager",
+  "email": "pr@netwelve.com",
+  "address": "Canada"
 }, {
-  "id": "Unlisted",
+  "id": "Veniamin Lozs",
+  "type": "person",
+  "title": "QR Manager",
+  "email": "ven@pm.me",
   "address": "Private listing"
 }, {
   "id": "Manny Ramirez",
-  "address": "200 S. Rampart, Austin, TX 76766"
+  "type": "person",
+  "title": "XR Manager",
+  "email": "manny@protonmail.com",
+  "address": "USA"
 }]

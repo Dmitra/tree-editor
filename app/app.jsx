@@ -18,6 +18,9 @@ export default function App() {
   const [menu, setMenu] = useState({})
   const [list, setList] = useState()
   const [items, setItems] = useState([])
+  //   id: '800-555-2323', position: { x: 400, y: 400}, type: 'entity',
+  //   data: { id: '800-555-2323', type: 'phone' },
+  // }])
   //   id: 'alphaott.com', position: { x: 400, y: 400}, type: 'entity',
   //   data: { id: 'alphaott.com', type: 'site' },
   // }])

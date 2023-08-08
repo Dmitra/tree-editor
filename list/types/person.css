@@ -1,0 +1,29 @@
+:local(.styles) {
+  display: flex;
+
+  & img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+  }
+
+  & .bi-patch-check {
+    color: lightseagreen;
+  }
+
+  & .info {
+    color: darkgrey;
+
+    & .item {
+      flex: 1;
+    }
+
+    & i {
+      padding: 2px;
+
+      &.bi-envelope-at {
+        padding-right: 4px;
+      }
+    }
+  }
+}
