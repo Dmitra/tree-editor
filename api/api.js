@@ -1,29 +1,45 @@
+import _ from 'lodash'
+
 class Api {
-  async load (id) {
-    const response = await fetch(`data/${id}.json`)
-    const json = await response.json()
-    return this.format(json)
+  async load (idS, source, requestType) {
+    const ids = _.castArray(idS)
+    const json = []
+    for await (const id of ids) {
+      const response = await fetch(`data/${source}/${requestType}/${id}.json`)
+      json.push(await response.json())
+    }
+    return requestType === 'item' ? this.formatGraph(this.mergeGraph(json)) : this.formatList(json[0])
   }
 
-  format (data) {
-    data.nodes = data.nodes.map(dataNode => {
-      const node = {
-        id: dataNode.id,
-        data: {
-          ...dataNode,
-          name: dataNode.id,
-        },
-        type: 'entity',
-        position: { x: 0, y: 0 },
-      }
+  mergeGraph (data) {
+    return _.reduce(data, (acc, graph) => {
+      acc.nodes.push(...graph.nodes)
+      acc.links.push(...graph.links)
+      return acc
+    }, { nodes: [], links: [] })
+  }
 
-      return node
-    })
+  formatGraph (data) {
+    data.items = data.nodes.map(this.item2Node)
+    delete data.nodes
     data.links.map(link => {
       link.id = `${link.source}-${link.target}`
     })
 
     return data
+  }
+
+  formatList (data) {
+    return data.map(this.item2Node)
+  }
+
+  item2Node (item) {
+    return {
+      id: item.id,
+      data: item,
+      type: 'entity',
+      position: { x: 0, y: 0 },
+    }
   }
 }
 

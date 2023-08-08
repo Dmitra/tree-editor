@@ -1,0 +1,35 @@
+[
+  {
+    "id": "Netwelve LLC",
+    "Company Number": "6190210",
+    "Incorporation Date": "24 August, 2021",
+    "Company Type": "Domestic Limited Liability Company",
+    "Jurisdiction": "Delaware",
+    "Registered Address": "Sussex, DE, USA",
+    "Agent Name": "Harvard Business Services Inc",
+    "Agent Address": "16192 Coastal Hwy – Lewes DE 19958",
+    "Directors / Officers": "1 officer available"
+  },
+  {
+    "id": "Zaaptv LLC",
+    "Company Number": "6121012",
+    "Incorporation Date": "21 July, 2015",
+    "Company Type": "Domestic Limited Liability Company",
+    "Jurisdiction": "Las Vegas",
+    "Registered Address": "Las Vegas, NV",
+    "Agent Name": "Privacy Protect",
+    "Agent Address": "292 Station Lane – Las Vegas, NV 89134",
+    "Directors / Officers": "2 officers available"
+  },
+  {
+    "id": "ABC Consultancy",
+    "Company Number": "13223",
+    "Incorporation Date": "4 August, 2019",
+    "Company Type": "Domestic Limited Liability Company",
+    "Jurisdiction": "Florida",
+    "Registered Address": "Tampa Bay, FL",
+    "Agent Name": "Free Agent Solutions",
+    "Agent Address": "21292 Blue Street – FL 12122",
+    "Directors / Officers": "1 officer available"
+  }
+]

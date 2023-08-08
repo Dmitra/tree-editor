@@ -1,0 +1,21 @@
+{
+  "nodes": [
+    {
+      "id": "12-1212",
+      "type": "tag",
+      "About": [
+        {
+          "Type": "Google Adsense",
+          "Last Seen": "July, 10, 2023"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "source": "zaaptv.com",
+      "target": "12-1212",
+      "context": "Reverse Whois lookup performed June 2023"
+    }
+  ]
+}

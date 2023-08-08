@@ -12,7 +12,9 @@ export default function Details ({ selection }) {
 
   function onChange (propName) {
     return e => {
-      _.set(selectedNode.data, propName, e.target.value)
+      const value = e.target.value
+      if (propName === 'id') selectedNode.id = value
+      _.set(selectedNode.data, propName, value)
       setNodes(nodes)
     }
   }
@@ -22,16 +24,20 @@ export default function Details ({ selection }) {
   return (
     <div className={ styles }>
       <p>Details</p>
-      { selection && <InputGroup size="sm" className="mb-3">
-        <InputGroup.Prepend>
-          <InputGroup.Text id="inputGroup-sizing-sm">Name: </InputGroup.Text>
-        </InputGroup.Prepend>
-        <FormControl value={ selectedNode.data.name } onChange={ onChange('name')} />
-        <InputGroup.Prepend>
-          <InputGroup.Text id="inputGroup-sizing-sm">Type: </InputGroup.Text>
-        </InputGroup.Prepend>
-        <FormControl value={ selectedNode.data.type } onChange={ onChange('type') }/>
-      </InputGroup>}
+      { selection && <>
+        <InputGroup size="sm" className="mb-3">
+          <InputGroup.Prepend>
+            <InputGroup.Text id="inputGroup-sizing-sm">Name: </InputGroup.Text>
+          </InputGroup.Prepend>
+          <FormControl value={ selectedNode.id } onChange={ onChange('id')} />
+        </InputGroup>
+          <InputGroup size="sm" className="mb-3">
+          <InputGroup.Prepend>
+            <InputGroup.Text id="inputGroup-sizing-sm">Type: </InputGroup.Text>
+          </InputGroup.Prepend>
+          <FormControl value={ selectedNode.data.type } onChange={ onChange('type') }/>
+        </InputGroup>
+        </>}
     </div>
   )
 }

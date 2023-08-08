@@ -1,15 +1,43 @@
 import _ from 'lodash'
-import React from 'react'
+import React, { useState } from 'react'
+import { Modal, Button, ListGroup } from 'react-bootstrap'
 
-import { styles } from './styles.css'
+export default function List ({ items, source, onSelect }) {
+  const [selection, setSelection] = useState([])
 
-export default function List ({ items }) {
+  function onSelectItem (item) {
+    return () => {
+      setSelection([item, ...selection])
+    }
+  }
 
   return (
-    <div className={ styles }>
-      { _.map(items, item => (
-        <div></div>
-      ))}
-    </div>
+    <Modal
+      show={ !!items }
+      size="lg"
+      centered
+      onHide={ onSelect() }
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          { source } items
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <ListGroup>
+          { _.map(items, item => (
+            <ListGroup.Item key={ `list-item-${item.id}`}
+              action
+              variant={ _.includes(selection, item.id) ? 'dark' : '' }
+              onClick={ onSelectItem(item.id) }>
+              { item.id }
+            </ListGroup.Item>
+          ))}
+        </ListGroup>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={ onSelect(selection, source) }>Select</Button>
+      </Modal.Footer>
+    </Modal>
   )
 }

@@ -1,0 +1,22 @@
+{
+"nodes": [
+  {
+    "id": "zaaptv.com",
+    "type": "site",
+    "About": [
+      {
+        "Type": "IPTV Service",
+        "Status": "Active"
+      }
+    ]
+  }
+],
+"links":
+  [
+    {
+      "source": "Zaaptv LLC",
+      "target": "zaaptv.com",
+      "context": "Reverse Whois lookup performed June 2023"
+    }
+  ]
+}

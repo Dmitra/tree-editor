@@ -1,4 +1,5 @@
-import React, { useEffect, useCallback  } from 'react'
+import _ from 'lodash'
+import React, { useEffect, useCallback } from 'react'
 import ReactFlow, {
   useReactFlow,
   useOnSelectionChange,
@@ -46,14 +47,12 @@ export default function Vis (p) {
       const sourceId = e.target.closest('.react-flow__node')?.getAttribute('data-id')
 
       const target = {
-        id: `${p.items.length + 1}`,
         position: {
           x: e.clientX,
           y: e.clientY,
         },
         type: 'entity',
         data: {
-          name: `New node ${p.items.length + 1}`,
           type: e.dataTransfer.getData('nodeType'),
         },
       }
@@ -63,10 +62,13 @@ export default function Vis (p) {
   }
 
   function onNodeContextMenu (e) {
+    const id = e.target.closest('.react-flow__node')?.getAttribute('data-id')
+    const item = _.find(p.items, { id })
     e.preventDefault()
     p.onItemContextMenu({
       x: e.clientX,
       y: e.clientY,
+      item: item.data,
     })
   }
 

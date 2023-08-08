@@ -1,0 +1,25 @@
+{
+  "nodes": [
+    {
+      "id": "alphaott.com",
+      "type": "site",
+      "host": [
+        {
+          "name": "Cloudflare, Inc. (CLOUD14)"
+        }
+      ],
+      "whois": [
+        {
+          "name": "Redacted for Privacy",
+          "address": "Kalkofnsvegur 2"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "source": "12-1212",
+      "target": "alphaott.com"
+    }
+  ]
+}

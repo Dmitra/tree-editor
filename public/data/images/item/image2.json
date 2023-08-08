@@ -1,0 +1,14 @@
+{ "nodes": [
+  {
+    "id": "image2",
+    "type": "image",
+    "src": "https://s.gravatar.com/avatar/6a9e8fa3fb7f1c4ed26df322fd7998d5b061e647439f9e6bca4205e741dec176"
+  }
+],
+  "links": [
+    {
+      "source": "alphaott.com",
+      "target": "image2"
+    }
+  ]
+}

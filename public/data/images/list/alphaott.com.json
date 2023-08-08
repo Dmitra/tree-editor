@@ -1,0 +1,17 @@
+[
+  {
+    "id": "image1",
+    "type": "image",
+    "src": "https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50.jpg"
+  },
+  {
+    "id": "image2",
+    "type": "image",
+    "src": "https://s.gravatar.com/avatar/6a9e8fa3fb7f1c4ed26df322fd7998d5b061e647439f9e6bca4205e741dec176"
+  },
+  {
+    "id": "image3",
+    "type": "image",
+    "src": "https://s.gravatar.com/avatar/dffd122183f037633ec746035c9a46a1ab31c20388c0a04f39fea633f386785f"
+  }
+]

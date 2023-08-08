@@ -11,13 +11,16 @@ import Menu from '../menu/menu'
 import Api from '../api/api'
 
 import 'bootstrap-icons/font/bootstrap-icons.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import { styles } from './styles.css'
 
 export default function App() {
-  // TODO replace ReactFlow nodes management by local "nodes" state
   const [menu, setMenu] = useState({})
-  const [list, setList] = useState({ open: false })
+  const [list, setList] = useState()
   const [items, setItems] = useState([])
+  //   id: 'alphaott.com', position: { x: 400, y: 400}, type: 'entity',
+  //   data: { id: 'alphaott.com', type: 'site' },
+  // }])
   const [links, setLinks] = useState([])
   const [selection, setSelection] = useState()
   const [layout, setLayout] = useState('circle')
@@ -27,9 +30,10 @@ export default function App() {
   }
 
   function addItem (target, sourceId) {
-    setItems(items => items.concat([target]))
-    console.log(items)
+    target.id = `${items.length + 1}`
+    target.data.id = target.id
 
+    setItems(items => items.concat([target]))
     if (sourceId) {
       const connectingLink = {
         id: `${sourceId}->${target.id}`,
@@ -40,19 +44,25 @@ export default function App() {
     }
   }
 
-  function onItemContextMenu (pos) {
-    setMenu(pos)
+  function mergeGraph (graph) {
+    setItems(items => items.concat(graph.items))
+    setLinks(links => links.concat(graph.links))
+  }
+
+  function onItemContextMenu (config) {
+    setMenu(config)
   }
 
   function onPaneClick () {
     setMenu({})
   }
 
-  function onMenu (name) {
-    return () => {
-      switch (name) {
+  function onMenu (itemId, parentMenu, source) {
+    return async () => {
+      switch (parentMenu) {
         case 'enrich':
-          setList({ open: true })
+          const loadedList = await Api.load(itemId, source, 'list')
+          setList({ items: loadedList, source })
           break
         case 'edit':
           break
@@ -64,6 +74,14 @@ export default function App() {
           break
       }
       onPaneClick()
+    }
+  }
+
+  function onSelectListItem (id, source) {
+    return async () => {
+      setList()
+      const graph = await Api.load(id, source, 'item')
+      mergeGraph(graph)
     }
   }
 
@@ -87,8 +105,8 @@ export default function App() {
           <Details selection={ selection }/>
           <Properties selection={ selection }/>
         </div>
-        { menu.open && <Menu onSelect={ onMenu } menu /> }
-        { list.open && <List/> }
+        { menu.x && <Menu onSelect={ onMenu } {...menu} /> }
+        { list && <List { ...list } onSelect={ onSelectListItem }/> }
       </div>
   )
 }

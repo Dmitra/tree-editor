@@ -1,0 +1,29 @@
+{
+  "nodes": [
+    {
+      "id": "Zaaptv LLC",
+      "type": "company",
+      "Incorporation": [
+        {
+          "Date": "21 July, 2015"
+        }
+      ],
+      "Address": [
+        {
+          "Street": "292 Station Lane",
+          "City": "Las Vegas",
+          "State": "NV",
+          "Country": "US",
+          "Zipcode": "89134"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "source": "Igor Yurtaev",
+      "target": "Zaaptv LLC",
+      "context": "Corporate search, July 2023"
+    }
+  ]
+}

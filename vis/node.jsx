@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Handle, Position } from 'reactflow'
 import clsx from 'clsx'
 
-import types from '../app/node-types'
+import types from '../app/node-types.json'
 import { styles } from './node.css'
 
 export default function Node({ data, sourcePosition, targetPosition }) {
@@ -34,10 +34,10 @@ export default function Node({ data, sourcePosition, targetPosition }) {
       onDragEnter={ onDragEnter }
       onDragLeave={ onDragLeave }
     >
-      <i className={ types[data.type]?.icon }/>
+      <i className={ `bi-${types[data.type]?.icon}` }/>
       <Handle type="target" position={ targetPosition || Position.Top } />
       <Handle type="source" position={ sourcePosition || Position.Bottom } />
-      { data.name }
+      { data.id }
     </div>
   )
 }

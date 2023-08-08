@@ -1,7 +1,7 @@
 import _ from 'lodash'
 import React from 'react'
 
-import types from '../app/node-types'
+import types from '../app/node-types.json'
 import { styles } from './styles.css'
 
 export default function CreateItemPanel () {
@@ -15,7 +15,7 @@ export default function CreateItemPanel () {
     <div className={ styles }>
       { _.map(types, (type, name) => (
         <div key={ `new-node-${name}` } onDragStart={ onDragStart(name)} draggable className="node">
-          <i className={ type.icon }/>
+          <i className={ `bi-${type.icon}` }/>
           { type.label }
         </div>
       ))}

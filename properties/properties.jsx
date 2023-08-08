@@ -29,12 +29,15 @@ export default function Properties ({ selection }) {
         <FormControl value={ selectedNode.data.host[0].name } onChange={ onChange('host[0].name') } />
         </InputGroup>
       }
-      { selectedNode.data?.whois && <InputGroup size="sm" className="mb-3">
+      { selectedNode.data?.whois && <>
+      <br />
+      <InputGroup size="sm" className="mb-3">
         <InputGroup.Prepend>
           <InputGroup.Text id="inputGroup-sizing-sm">Type: </InputGroup.Text>
         </InputGroup.Prepend>
         <FormControl value={ selectedNode.data.whois[0].name } onChange={ onChange('whois[0].name') } />
       </InputGroup>
+      </>
       }
     </div>
   )

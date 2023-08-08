@@ -12,6 +12,31 @@ yarn install
 yarn start
 ```
 
+## Milestone 2
+- [x]  double circle context menu - nested
+- [x]  ability to create root node on empty canvas
+- [x]  show modal dialog on node’s “Load” action
+   - [x]  show a list of items (cards) in the modal
+   - [x]  user can select an item from the list, which will define the API query
+- [x]  add data to enable demo workflow
+
+### Workflow description
+1. Drop node phone on the canvas
+2. Edit id to: "800-555-2323"
+3. Node menu => Enrich => pipl.com
+4. Select "Igor Yurtaev" from the list in modal
+5. "Igor Yurtaev" node menu => "Enrich" => "Corporates"
+6. Select "Zaaptv LLC" from the list in modal
+7. "Zaaptv LLC" node menu => "Enrich" => "Reverse Whois"
+8. Select "zaaptv.com" from the list in modal
+9. "Zaaptv.com" node menu => "Enrich" => "Tags"
+10. Select "12-1212" from the list in modal
+11. "12-1212" node menu => "Enrich" => "Reverse lookup"
+12. Select "alphaott.com" from the list in modal
+13. "alphaott.com" node menu => "Enrich" => "Images"
+14. Select 3 images
+15. Change one of those new nodes "type" to "person" and "name" to "Julian Elliot"
+
 ## Milestone 1
 Create a standalone react app using ReactFlow to render data from static json payload.
 

@@ -1,0 +1,33 @@
+{
+  "site": [
+    "historical whois",
+    "whois",
+    "infrastructure",
+    "archive.org",
+    "tags",
+    "social media",
+    "images"
+  ],
+  "person": [
+    "social media",
+    "phone",
+    "email",
+    "address",
+    "pipl.com",
+    "corporates"
+  ],
+  "phone": [
+    "social media",
+    "pipl.com"
+  ],
+  "company": [
+    "directors",
+    "email",
+    "reverse whois",
+    "address"
+  ],
+  "tag": [
+    "reverse lookup",
+    "historical lookup"
+  ]
+}

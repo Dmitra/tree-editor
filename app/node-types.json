@@ -1,0 +1,30 @@
+{
+  "site": {
+    "label": "Site",
+    "icon": "browser-chrome"
+  },
+  "person": {
+    "label": "Person",
+    "icon": "person"
+  },
+  "phone": {
+    "label": "Phone",
+    "icon": "telephone"
+  },
+  "company": {
+    "label": "Company",
+    "icon": "briefcase"
+  },
+  "social media account": {
+    "label": "Social media account",
+    "icon": "facebook"
+  },
+  "tag": {
+    "label": "Tag",
+    "icon": "tag"
+  },
+  "image": {
+    "label": "Image",
+    "icon": "image"
+  }
+}
