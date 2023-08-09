@@ -25,6 +25,7 @@ export default function Menu ({ onSelect, x, y, item }) {
     }, {
       title: 'Delete',
       icon: 'bi-trash',
+      click: onSelect(item.id, 'remove'),
     }]
   }
 
@@ -32,7 +33,7 @@ export default function Menu ({ onSelect, x, y, item }) {
     return {
       title,
       icon,
-      click: onSelect(item.id, parent, title),
+      click: onSelect(item.id, title, parent),
     }
   }
 
@@ -47,6 +48,5 @@ export default function Menu ({ onSelect, x, y, item }) {
 
   return (
     <div id='menu1' className={ styles }></div>
-    // menu.hide();
   )
 }

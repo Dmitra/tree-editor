@@ -1,3 +1,4 @@
+import _ from 'lodash'
 import React, { useState } from 'react'
 import { MiniMap } from 'reactflow'
 
@@ -10,8 +11,6 @@ import List from '../list/list'
 import Menu from '../menu/menu'
 import Api from '../api/api'
 
-import 'bootstrap-icons/font/bootstrap-icons.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import { styles } from './styles.css'
 
 export default function App() {
@@ -47,6 +46,10 @@ export default function App() {
     }
   }
 
+  function removeItem (id) {
+    setItems(_.filter(items, item => item.id !== id))
+  }
+
   function mergeGraph (graph) {
     setItems(items => items.concat(graph.items))
     setLinks(links => links.concat(graph.links))
@@ -60,20 +63,20 @@ export default function App() {
     setMenu({})
   }
 
-  function onMenu (itemId, parentMenu, source) {
+  function onMenu (itemId, menuItem, parentMenu) {
+    const action = parentMenu || menuItem
     return async () => {
-      switch (parentMenu) {
+      switch (action) {
         case 'enrich':
-          const loadedList = await Api.load(itemId, source, 'list')
-          setList({ items: loadedList, source })
+          const loadedList = await Api.load(itemId, menuItem, 'list')
+          setList({ items: loadedList, source: menuItem })
           break
         case 'edit':
           break
         case 'copy':
           break
-        case 'delete':
-          // update items state
-          // deleteElements({ nodes: [{ id: nodeId }] })
+        case 'remove':
+          removeItem(itemId)
           break
       }
       onPaneClick()

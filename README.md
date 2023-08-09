@@ -19,6 +19,7 @@ yarn start
    - [x]  show a list of items (cards) in the modal
    - [x]  user can select an item from the list, which will define the API query
 - [x]  add data to enable demo workflow
+- [x] links retention for renamed nodes
 
 ### Workflow description
 1. Drop node phone on the canvas

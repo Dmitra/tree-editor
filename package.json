@@ -24,7 +24,7 @@
   "name": "case-management",
   "author": "Adrian Dmitra",
   "scripts": {
-    "start": "vite",
+    "dev": "vite",
     "build": "vite build"
   },
   "browserslist": {
