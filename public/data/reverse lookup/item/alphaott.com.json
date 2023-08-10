@@ -3,17 +3,11 @@
     {
       "id": "alphaott.com",
       "type": "site",
-      "host": [
-        {
-          "name": "Cloudflare, Inc. (CLOUD14)"
-        }
-      ],
-      "whois": [
-        {
-          "name": "Redacted for Privacy",
-          "address": "Kalkofnsvegur 2"
-        }
-      ]
+      "properties": {
+        "host": "Cloudflare, Inc. (CLOUD14)",
+        "whois": "Redacted for Privacy",
+        "whois address": "Kalkofnsvegur 2"
+      }
     }
   ],
   "links": [

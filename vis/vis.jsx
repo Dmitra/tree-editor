@@ -57,7 +57,7 @@ export default function Vis (p) {
         },
       }
 
-      p.addItem(target, sourceId)
+      if (!p.items.length || sourceId) p.addItem(target, sourceId)
     }
   }
 
@@ -99,8 +99,8 @@ export default function Vis (p) {
         onNodeContextMenu={ onNodeContextMenu }
         onPaneClick={ p.onPaneClick }
         defaultEdgeOptions={ defaultEdgeOptions }
-        minZoom={ -Infinity }
-        maxZoom={ Infinity }
+        minZoom={ 0.4 }
+        maxZoom={ 1 }
       />
   )
 }

@@ -3,12 +3,10 @@
     {
       "id": "12-1212",
       "type": "tag",
-      "About": [
-        {
-          "Type": "Google Adsense",
-          "Last Seen": "July, 10, 2023"
-        }
-      ]
+      "properties": {
+        "Type": "Google Adsense",
+        "Last Seen": "July, 10, 2023"
+      }
     }
   ],
   "links": [

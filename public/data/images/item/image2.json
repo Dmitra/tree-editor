@@ -2,7 +2,15 @@
   {
     "id": "image2",
     "type": "image",
-    "src": "https://s.gravatar.com/avatar/6a9e8fa3fb7f1c4ed26df322fd7998d5b061e647439f9e6bca4205e741dec176"
+    "src": "https://s.gravatar.com/avatar/6a9e8fa3fb7f1c4ed26df322fd7998d5b061e647439f9e6bca4205e741dec176",
+    "properties": {
+      "Incorporation": "21 July, 2015",
+      "Address Street": "292 Station Lane",
+      "Address City": "Las Vegas",
+      "Address State": "NV",
+      "Address Country": "US",
+      "Address Zipcode": "89134"
+    }
   }
 ],
   "links": [

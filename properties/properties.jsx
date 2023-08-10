@@ -1,7 +1,7 @@
 import _ from 'lodash'
 import React from 'react'
 import { useReactFlow } from 'reactflow'
-import { InputGroup, FormControl } from 'react-bootstrap'
+import { Form, FormControl, InputGroup, Button } from 'react-bootstrap'
 
 import { styles } from './styles.css'
 
@@ -10,11 +10,14 @@ export default function Properties ({ selection }) {
   const nodes = getNodes()
   const selectedNode = nodes.find(node => node.id === selection)
 
-  function onChange (propName) {
-    return e => {
-      _.set(selectedNode.data, propName, e.target.value)
-      setNodes(nodes)
-    }
+  function onSubmit (e) {
+    e.preventDefault()
+
+    _.each(e.target.getElementsByTagName('input'), target => {
+      name = target.closest('.input-group').getAttribute('data-id')
+      selectedNode.data.properties[name] = target.value
+    })
+    setNodes(nodes)
   }
 
   if (!selection || !selectedNode) return null
@@ -22,22 +25,17 @@ export default function Properties ({ selection }) {
   return (
     <div className={ styles }>
       <p>Properties</p>
-      { selectedNode.data?.host && <InputGroup size="sm" className="mb-3">
-        <InputGroup.Prepend>
-          <InputGroup.Text id="inputGroup-sizing-sm">Host: </InputGroup.Text>
-        </InputGroup.Prepend>
-        <FormControl value={ selectedNode.data.host[0].name } onChange={ onChange('host[0].name') } />
-        </InputGroup>
-      }
-      { selectedNode.data?.whois && <>
-      <br />
-      <InputGroup size="sm" className="mb-3">
-        <InputGroup.Prepend>
-          <InputGroup.Text id="inputGroup-sizing-sm">Type: </InputGroup.Text>
-        </InputGroup.Prepend>
-        <FormControl value={ selectedNode.data.whois[0].name } onChange={ onChange('whois[0].name') } />
-      </InputGroup>
-      </>
+      { selectedNode.data.properties && <Form onSubmit={ onSubmit }>
+        { _.map(selectedNode.data.properties, (value, name) => (
+          <InputGroup key={ `item-${selection}-prop-${name}` } size="sm" className="mb-3" data-id={ name }>
+          <InputGroup.Prepend>
+            <InputGroup.Text id="inputGroup-sizing-sm">{ name }: </InputGroup.Text>
+          </InputGroup.Prepend>
+          <FormControl defaultValue={ value }/>
+          </InputGroup>
+        ))}
+        <Button className="d-block ml-auto mr-0" type="submit" variant="dark">Save</Button>
+      </Form>
       }
     </div>
   )

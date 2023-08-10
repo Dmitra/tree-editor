@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 import loadCssModulePlugin from 'vite-plugin-load-css-module'
 
 export default defineConfig(({ command, mode }) => ({
+  base: './',
   build: {
     sourcemap: true,
   },

@@ -1,5 +1,6 @@
 :local(.styles) {
   padding: 34px 0 0 0;
+  cursor: pointer;
 
   &.dropzone {
     background-color: #e3e3eb;

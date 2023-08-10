@@ -27,8 +27,7 @@ export default function Node({ data, sourcePosition, targetPosition }) {
   const className = clsx(styles, { dropzone: isDropzoneActive })
 
   return (
-    <div
-      className={ className }
+    <div className={ className }
       onDrop={ onDrop }
       onDragOver={ onDragOver }
       onDragEnter={ onDragEnter }

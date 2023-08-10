@@ -3,20 +3,14 @@
   {
     "id": "Igor Yurtaev",
     "type": "person",
-    "Phone": [
-      {
-        "Number": "800-555-2323"
-      }
-    ],
-    "address": [
-      {
-        "Street": "1101 Brickell Avenue",
-        "City": "Miami",
-        "State": "FL",
-        "Country": "US",
-        "Zipcode": "33131"
-      }
-    ]
+    "properties": {
+      "Phone number": "800-555-2323",
+      "address street": "1101 Brickell Avenue",
+      "address city": "Miami",
+      "address state": "FL",
+      "address country": "US",
+      "address zipcode": "33131"
+    }
   }
 ],
   "links": [

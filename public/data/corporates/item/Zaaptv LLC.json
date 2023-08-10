@@ -3,20 +3,14 @@
     {
       "id": "Zaaptv LLC",
       "type": "company",
-      "Incorporation": [
-        {
-          "Date": "21 July, 2015"
-        }
-      ],
-      "Address": [
-        {
-          "Street": "292 Station Lane",
-          "City": "Las Vegas",
-          "State": "NV",
-          "Country": "US",
-          "Zipcode": "89134"
-        }
-      ]
+      "properties": {
+        "Incorporation": "21 July, 2015",
+        "Address Street": "292 Station Lane",
+        "Address City": "Las Vegas",
+        "Address State": "NV",
+        "Address Country": "US",
+        "Address Zipcode": "89134"
+      }
     }
   ],
   "links": [

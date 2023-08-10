@@ -3,12 +3,10 @@
   {
     "id": "zaaptv.com",
     "type": "site",
-    "About": [
-      {
-        "Type": "IPTV Service",
-        "Status": "Active"
-      }
-    ]
+    "properties": {
+      "Type": "IPTV Service",
+      "Status": "Active"
+    }
   }
 ],
 "links":
