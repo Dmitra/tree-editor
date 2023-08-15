@@ -1,12 +1,14 @@
 import _ from 'lodash'
 
+import data from '../public/data/bundle.json'
+
 class Api {
   async load (idS, source, requestType) {
     const ids = _.castArray(idS)
     const json = []
     for await (const id of ids) {
-      const response = await fetch(`data/${source}/${requestType}/${id}.json`)
-      json.push(await response.json())
+      const response = data?.[source]?.[requestType]?.[id]
+      json.push(response)
     }
     return requestType === 'item' ? this.formatGraph(this.mergeGraph(json)) : this.formatList(json[0])
   }
