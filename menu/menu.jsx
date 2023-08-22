@@ -10,7 +10,7 @@ import { styles } from './styles.css'
 export default function Menu ({ onSelect, x, y, item }) {
   const menu = useRef()
   const config = {
-    diameter: 200,
+    diameter: 150,
     menus: [{
       title: 'Copy',
       icon: 'bi-clipboard',

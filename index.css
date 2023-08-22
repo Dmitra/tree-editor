@@ -1,8 +1,22 @@
 html, body, #root {
+  --menu-inner: #C9E4E7;
+  --menu-outer: #75A7AC;
+  --menu-inner-hover: #AAD3D7;
+  --menu-outer-hover: #5B979D;
+
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+
+  .circular-sub-menu ul li a {
+    background: radial-gradient(transparent 0% 43%, var(--menu-inner) 43%, var(--menu-outer));
+    box-shadow: 1px 2px 3px #00000029;
+
+    &:hover {
+      background: radial-gradient(transparent 0% 43%, var(--menu-inner-hover) 43%, var(--menu-outer-hover));
+    }
+  }
 }
