@@ -3,24 +3,27 @@
   top: 4px;
   left: 4px;
   z-index: 1;
-  border-right: 1px solid #222138;
-  width: 40px;
+
+  width: 50px !important;;
   flex-grow: 0;
   flex-shrink: 0;
-  background-color: #6f6d84;
+  background: transparent linear-gradient(270deg, #DBDFE9 0%, #C3CFE8 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
 
   & button {
-    width: 32px;
-    height: 32px;
-    margin: 4px;
+    width: 32px !important;;
+    height: 32px !important;;
+    margin: 4px !important;;
     padding: 0;
 
     > i {
-      font-size: 20px;
+      font-size: 20px !important;;
+      margin-left:-8px;
+      margin-top:-6px;
     }
 
     & i.bi-share {
-      font-size: 16px;
+      font-size: 16px !important;;
     }
   }
 }

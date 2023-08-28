@@ -4,14 +4,17 @@
   left: 4px;
   z-index: 1;
   padding: 4px;
-  border-right: 1px solid #222138;
+  border-right: 1px solid #FFFFFF;
   width: 200px;
   flex-grow: 0;
   flex-shrink: 0;
-  background-color: #46445a;
+  background: #C3CFE8 0% 0% no-repeat padding-box;
+  opacity: 1;
 
   .node {
-    background: #222138;
+    background: #071437;
+    opacity: 1;
+    box-shadow: 0px 3px 6px #07143784;
     color: #fff;
     padding: 8px;
     border-radius: 8px;
@@ -19,11 +22,21 @@
     margin-bottom: 8px;
   }
 
+
   .node:hover {
     box-shadow: rgba(0, 0, 0, 0.533) 0px 0px 9px 0px;
   }
 
   .node i {
     padding-right: 8px;
+  }
+  .searchcontainer {
+    padding-bottom: 10%;
+  }
+
+  .searchcontainer input {
+    border-radius: 18px;
+    
+
   }
 }

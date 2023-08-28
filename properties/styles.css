@@ -4,11 +4,13 @@
   left: 4px;
   z-index: 1;
   padding: 8px;
-  border-right: 1px solid #222138;
-  border-bottom: 1px solid #222138;
   flex-grow: 0;
+  font: normal normal bold 14px/17px Inter;
+  letter-spacing: 1px;
+  text-align: left;
   flex-shrink: 0;
-  background-color: #5f5d72;
+  background: #C3CFE8;
+  opacity: 1;
 
   & input {
     width: 178px;

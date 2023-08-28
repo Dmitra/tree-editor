@@ -1,5 +1,5 @@
 {
-  "corporates": {
+  "Corporates": {
     "item": {
       "Zaaptv LLC": {
         "nodes": [
@@ -7,7 +7,7 @@
             "id": "Zaaptv LLC",
             "type": "company",
             "properties": {
-              "Incorporation": "21 July, 2015",
+              "Incorporation": "21 July, 1515",
               "Address Street": "292 Station Lane",
               "Address City": "Las Vegas",
               "Address State": "NV",
@@ -20,6 +20,31 @@
           {
             "source": "Igor Yurtaev",
             "target": "Zaaptv LLC",
+            "context": "Corporate search, July 2023"
+          }
+        ]
+      },
+      "ALPHA OTT INC." : {
+        "nodes" : [
+          {
+            "id": "ALPHA OTT INC.",
+            "type": "company",
+            "properties": {
+              "Company Number": "0803795854",
+              "Incorporation Date": "14 October 2020 (almost 3 years ago)",
+              "Company Type": "Domestic For-Profit Corporation",
+              "Jurisdiction": "Texas (US)",
+              "Registered Address": "8623 HEMLOCK HILL DR, HOUSTON, TX 77083-6870, USA",
+              "Agent Name": "OSE OYAKHILOME",
+              "Agent Address": "8623 HEMLOCK HILL DRIVE, HOUSTON, TX, 77083, USA",
+              "Directors / Officers": "5 officers available"
+            }
+          }
+        ],
+        "links": [
+          {
+            "source": "Nick Ntigrintakis",
+            "target": "ALPHA OTT INC.",
             "context": "Corporate search, July 2023"
           }
         ]
@@ -60,10 +85,31 @@
           "Agent Address": "21292 Blue Street – FL 12122",
           "Directors / Officers": "1 officer available"
         }
+      ],
+      "Nick Ntigrintakis": [
+        {
+          "id": "ALPHA OTT INC.",
+          "Company Number": "0803795854",
+          "Incorporation Date": "14 October 2020 (almost 3 years ago)",
+          "Company Type": "Domestic For-Profit Corporation",
+          "Jurisdiction": "Texas (US)",
+          "Registered Address": "8623 HEMLOCK HILL DR, HOUSTON, TX 77083-6870, USA",
+          "Agent Name": "OSE OYAKHILOME",
+          "Agent Address": "8623 HEMLOCK HILL DRIVE, HOUSTON, TX, 77083, USA",
+          "Directors / Officers": "5 officers available"
+        },
+        {
+          "id": "XEROF FINANCIAL SERVICES SA, en liquidation",
+          "Company Number": "516883",
+          "Dissolution Date": "23 November 2022",
+          "Company Type": "Aktiengesellschaft",
+          "Jurisdiction": "Switzerland",
+          "Registered Address": "Rue François-Versonnex, 7, Genève, Switzerland, 1207"
+        }
       ]
     }
   },
-  "images": {
+  "Images": {
     "item": {
       "image1": {
         "nodes": [
@@ -155,7 +201,7 @@
       ]
     }
   },
-  "pipl.com": {
+  "Pipl.com": {
     "item": {
       "Igor Yurtaev": {
         "nodes": [
@@ -179,30 +225,60 @@
             "context": "Pipl search executed today"
           }
         ]
+      },
+      "Nick Ntigrintakis" : {
+        "nodes": [
+          {
+            "id": "Nick Ntigrintakis",
+            "type": "person",
+            "properties": {
+              "Phone number": "800-555-2323",
+              "address street": "1101 Brickell Avenue",
+              "address city": "Miami",
+              "address state": "FL",
+              "address country": "US",
+              "address zipcode": "33131"
+            }
+          }
+        ],
+        "links": [
+          {
+            "source": "800-555-2323",
+            "target": "Nick Ntigrintakis",
+            "context": "Pipl search executed today"
+          }
+        ]
       }
     },
     "list": {
       "800-555-2323": [
+        {
+          "id": "Nikolaos Digrintakis",
+          "type": "person",
+          "address": "Stockholm, Sweden",
+          "title": "55 years old",
+          "email": "Unknown"
+        },
+        {
+          "id": "Nick Ntigrintakis",
+          "type": "person",
+          "address": "Zurich, Switzerland",
+          "title": "55 years old",
+          "email": "nick@alphaott.com"
+        },
+        {
+          "id": "Nicholas Ntir",
+          "type": "person",
+          "address": "Berlin, Germany",
+          "title": "26 years old",
+          "email": "nicntiri@gmail.com"
+        },
         {
           "id": "Igor Yurtaev",
           "type": "person",
           "title": "PR Manager",
           "email": "pr@netwelve.com",
           "address": "Canada"
-        },
-        {
-          "id": "Veniamin Lozs",
-          "type": "person",
-          "title": "QR Manager",
-          "email": "ven@pm.me",
-          "address": "Private listing"
-        },
-        {
-          "id": "Manny Ramirez",
-          "type": "person",
-          "title": "XR Manager",
-          "email": "manny@protonmail.com",
-          "address": "USA"
         }
       ]
     }
@@ -238,7 +314,7 @@
       ]
     }
   },
-  "reverse whois": {
+  "Reverse whois": {
     "item": {
       "zaaptv.com": {
         "nodes": [
@@ -246,15 +322,36 @@
             "id": "zaaptv.com",
             "type": "site",
             "properties": {
-              "Type": "IPTV Service",
+              "Created Date": "29.10.2009",
+              "Registrar": "VRSN",
               "Status": "Active"
             }
           }
         ],
         "links": [
           {
-            "source": "Zaaptv LLC",
+            "source": "ALPHA OTT INC.",
             "target": "zaaptv.com",
+            "context": "Reverse Whois lookup performed June 2023"
+          }
+        ]
+      },
+      "alphaott.com": {
+        "nodes": [
+          {
+            "id": "alphaott.com",
+            "type": "site",
+            "properties": {
+              "Created Date": "09.10.2016",
+              "Registrar": "ENOM LLC [TAG = ENOM]",
+              "Status": "Active"
+            }
+          }
+        ],
+        "links": [
+          {
+            "source": "ALPHA OTT INC.",
+            "target": "alphaott.com",
             "context": "Reverse Whois lookup performed June 2023"
           }
         ]
@@ -269,6 +366,26 @@
         },
         {
           "id": "zaaptv.tv",
+          "Status": "Inactive"
+        }
+      ],
+      "ALPHA OTT INC.": [
+        {
+          "id": "cressida.se",
+          "Status": "Active",
+          "Type": "IPTV Service"
+        },
+        {
+          "id": "maaxtv.se",
+          "Status": "Inactive"
+        },
+        {
+          "id": "alphaott.com",
+          "Status": "Active",
+          "Type": "IPTV Service"
+        },
+        {
+          "id": "zaaptv.com",
           "Status": "Inactive"
         }
       ]

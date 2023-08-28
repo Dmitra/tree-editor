@@ -34,7 +34,7 @@ export default function Properties ({ selection }) {
           <FormControl defaultValue={ value }/>
           </InputGroup>
         ))}
-        <Button className="d-block ml-auto mr-0" type="submit" variant="dark">Save</Button>
+        <Button className="btn btn-primary btn-lg btn-block btn-sm" type="submit">Save</Button>
       </Form>
       }
     </div>

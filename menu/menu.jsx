@@ -10,17 +10,17 @@ import { styles } from './styles.css'
 export default function Menu ({ onSelect, x, y, item }) {
   const menu = useRef()
   const config = {
-    diameter: 150,
+    diameter: 300,
     menus: [{
       title: 'Copy',
       icon: 'bi-clipboard',
     }, {
       title: 'Edit',
       icon: 'bi-pencil',
-      disabled: true,
+
     }, {
       title: 'Enrich',
-      icon: 'bi-cloud-arrow-down',
+      icon: 'bi-magic',
       menus: _.map(enrich[item.type], title => makeItem('enrich', title)),
     }, {
       title: 'Delete',

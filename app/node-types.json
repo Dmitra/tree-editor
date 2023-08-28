@@ -1,7 +1,7 @@
 {
   "site": {
     "label": "Site",
-    "icon": "browser-chrome"
+    "icon": "window"
   },
   "person": {
     "label": "Person",
@@ -13,15 +13,15 @@
   },
   "company": {
     "label": "Company",
-    "icon": "briefcase"
+    "icon": "building"
   },
   "social media account": {
-    "label": "Social media account",
-    "icon": "facebook"
+    "label": "Social Media",
+    "icon": "person-square"
   },
   "tag": {
     "label": "Tag",
-    "icon": "tag"
+    "icon": "git"
   },
   "image": {
     "label": "Image",

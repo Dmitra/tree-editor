@@ -13,12 +13,15 @@
 
   & i {
     position: absolute;
-    top: 8px;
-    left: calc(50% - 12px);
-    font-size: 24px;
-    height: 24px;
+    top: 2px;
+    left: calc(50% - 16px);
+    font-size: 30px;
+    height: 30px;
     background-color: #ededed;
+    color: #3699FF;
   }
+
+ 
 
   & .react-flow__handle {
     visibility: hidden;

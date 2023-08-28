@@ -1,6 +1,9 @@
 :local(.styles) {
   color: white;
   padding: 8px;
-  border-bottom: 1px solid #222138;
-  background-color: #5f5d72;
+  background: #C3CFE8;
+  font: normal normal bold 14px/17px Inter;
+  letter-spacing: 1px;
+  text-align: left;
+  opacity: 1;
 }

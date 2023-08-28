@@ -1,33 +1,35 @@
 {
   "site": [
-    "historical whois",
-    "whois",
-    "infrastructure",
-    "archive.org",
-    "tags",
-    "social media",
-    "images"
+    "Historical whois",
+    "Infrastructure",
+    "Archive.org",
+    "Tags",
+    "Social media",
+    "Images"
   ],
   "person": [
-    "social media",
-    "phone",
-    "email",
-    "address",
-    "pipl.com",
-    "corporates"
+    "Social Media",
+    "Phone",
+    "Email",
+    "Address",
+    "Pipl.com",
+    "Corporates"
   ],
   "phone": [
-    "social media",
-    "pipl.com"
+    "Social media",
+    "Pipl.com"
   ],
   "company": [
-    "directors",
-    "email",
-    "reverse whois",
-    "address"
+    "Directors",
+    "Email",
+    "Reverse whois",
+    "Address"
   ],
   "tag": [
     "reverse lookup",
     "historical lookup"
+  ],
+  "image": [
+    "Social media"
   ]
 }
