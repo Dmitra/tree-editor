@@ -1,18 +1,22 @@
 import _ from 'lodash'
 import React, { useState } from 'react'
-import { Modal, Button, ListGroup } from 'react-bootstrap'
+import { Modal, Button } from 'react-bootstrap'
+import List from './types/list'
 
 import * as Views from './types'
 
-export default function List ({ items, source, onSelect }) {
+export default function ModalList ({ items, source, onSelect }) {
   const [selection, setSelection] = useState([])
-  const View = Views[items[0].data.type]
+  const View = Views[_.camelCase(items[0].data.type)] || List
 
   function onSelectItem (item) {
     return () => {
-      setSelection([item, ...selection])
+      const newSelection = _.includes(selection, item) ? _.without(selection, item) : [item, ...selection]
+      setSelection(newSelection)
     }
   }
+
+  const props = { items, selection, onSelectItem }
 
   return (
     <Modal
@@ -27,17 +31,7 @@ export default function List ({ items, source, onSelect }) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <ListGroup>
-          { _.map(items, item => (
-            <ListGroup.Item key={ `list-item-${item.id}`}
-              action
-              variant={ _.includes(selection, item.id) ? 'secondary' : '' }
-              onClick={ onSelectItem(item.id) }>
-              { View && <View data={ item.data }/> }
-              { !View && item.id }
-            </ListGroup.Item>
-          ))}
-        </ListGroup>
+        <View { ...props }/>
       </Modal.Body>
       <Modal.Footer>
         <Button onClick={ onSelect(selection, source) }>Select</Button>

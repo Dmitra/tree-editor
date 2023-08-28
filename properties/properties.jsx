@@ -29,7 +29,7 @@ export default function Properties ({ selection }) {
         { _.map(selectedNode.data.properties, (value, name) => (
           <InputGroup key={ `item-${selection}-prop-${name}` } size="sm" className="mb-3" data-id={ name }>
           <InputGroup.Prepend>
-            <InputGroup.Text id="inputGroup-sizing-sm">{ name }: </InputGroup.Text>
+            <InputGroup.Text id="inputGroup-sizing-sm">{ name }</InputGroup.Text>
           </InputGroup.Prepend>
           <FormControl defaultValue={ value }/>
           </InputGroup>

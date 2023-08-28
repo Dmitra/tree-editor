@@ -7,9 +7,11 @@ class Api {
     const ids = _.castArray(idS)
     const json = []
     for await (const id of ids) {
-      const response = data?.[source]?.[requestType]?.[id]
+      let response = data?.[source]?.[requestType]?.[id]
+      if (!response && source === 'item') response = data?.[source]?.list?.[id]
       json.push(response)
     }
+    console.log(json)
     return requestType === 'item' ? this.formatGraph(this.mergeGraph(json)) : this.formatList(json[0])
   }
 
@@ -38,7 +40,10 @@ class Api {
   item2Node (item) {
     return {
       id: item.id,
-      data: item,
+      data: {
+        ...item,
+        icon: _.toLower(item?.properties?.Domain),
+      },
       type: 'entity',
       position: { x: 0, y: 0 },
     }

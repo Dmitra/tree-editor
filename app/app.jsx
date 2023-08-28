@@ -7,7 +7,7 @@ import CreateItemPanel from '../create-item-panel/create-item-panel'
 import LayoutSelector from '../layout-selector/layout-selector'
 import Details from '../details/details'
 import Properties from '../properties/properties'
-import List from '../list/list'
+import Modal from '../list/modal'
 import Menu from '../menu/menu'
 import Api from '../api/api'
 
@@ -17,11 +17,11 @@ export default function App() {
   const [menu, setMenu] = useState({})
   const [list, setList] = useState()
   const [items, setItems] = useState([])
-  //   id: '800-555-2323', position: { x: 400, y: 400}, type: 'entity',
-  //   data: { id: '800-555-2323', type: 'phone' },
-  // }])
-  //   id: 'alphaott.com', position: { x: 400, y: 400}, type: 'entity',
-  //   data: { id: 'alphaott.com', type: 'site' },
+    // position: { x: 400, y: 400}, type: "entity",
+    // id: '800-555-2323', data: { id: '800-555-2323', type: 'phone' },
+    // id: 'Zaaptv LLC', data: { id: 'Zaaptv LLC', type: 'company' },
+    // id: "Nick Ntigrintakis", data: { id: "Nick Ntigrintakis", type: "person" },
+    // id: 'alphaott.com', data: { id: 'alphaott.com', type: 'site' },
   // }])
   const [links, setLinks] = useState([])
   const [selection, setSelection] = useState()
@@ -112,7 +112,7 @@ export default function App() {
           <Properties selection={ selection }/>
         </div>
         { menu.x && <Menu onSelect={ onMenu } {...menu} /> }
-        { list && <List { ...list } onSelect={ onSelectListItem }/> }
+        { list && <Modal { ...list } onSelect={ onSelectListItem }/> }
       </div>
   )
 }

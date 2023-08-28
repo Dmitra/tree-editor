@@ -11,7 +11,7 @@
     }
   }
 
-  & i {
+  & i, & img {
     position: absolute;
     top: 2px;
     left: calc(50% - 16px);
@@ -20,8 +20,6 @@
     background-color: #ededed;
     color: #3699FF;
   }
-
- 
 
   & .react-flow__handle {
     visibility: hidden;

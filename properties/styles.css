@@ -3,7 +3,7 @@
   top: 4px;
   left: 4px;
   z-index: 1;
-  padding: 8px;
+  padding: 4px;
   flex-grow: 0;
   font: normal normal bold 14px/17px Inter;
   letter-spacing: 1px;
@@ -12,7 +12,23 @@
   background: #C3CFE8;
   opacity: 1;
 
-  & input {
-    width: 178px;
+  & .input-group {
+    margin: 0 !important;
+
+    & .input-group-prepend {
+      & .input-group-text {
+        width: 100px;
+        border-radius: 0;
+      }
+    }
+
+    & input.form-control {
+      border-radius: 0;
+    }
+  }
+
+  & button {
+    margin: 16px;
+    width: -webkit-fill-available;
   }
 }

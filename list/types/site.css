@@ -1,0 +1,5 @@
+:local(.styles) {
+  & .selected {
+    background-color: #d6d8db;
+  }
+}

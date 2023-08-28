@@ -1,0 +1,11 @@
+:local(.styles) {
+  & .selected {
+    background-color: #d6d8db;
+  }
+
+  & img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+  }
+}

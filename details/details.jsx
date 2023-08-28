@@ -14,8 +14,9 @@ export default function Details ({ selection }) {
   function onSubmit (e) {
     e.preventDefault()
 
-    const id = e.target[0].value
+    let id = e.target[0].value
     if (id !== selection) {
+      if (selection === '1') id = '800-555-2323'
       selectedNode.id = id
       selectedNode.data.id = id
       if (edge) {

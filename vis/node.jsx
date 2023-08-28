@@ -33,7 +33,8 @@ export default function Node({ data, sourcePosition, targetPosition }) {
       onDragEnter={ onDragEnter }
       onDragLeave={ onDragLeave }
     >
-      <i className={ `bi-${types[data.type]?.icon}` }/>
+      { !data.src && <i className={ `bi-${data.icon || types[data.type]?.icon}` }/>}
+      { data.src && <img src={ data.src }/> }
       <Handle type="target" position={ targetPosition || Position.Top } />
       <Handle type="source" position={ sourcePosition || Position.Bottom } />
       { data.id }

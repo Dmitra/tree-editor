@@ -1,9 +1,14 @@
 :local(.styles) {
   color: white;
-  padding: 8px;
+  padding: 4px;
   background: #C3CFE8;
   font: normal normal bold 14px/17px Inter;
   letter-spacing: 1px;
   text-align: left;
   opacity: 1;
+
+  & button {
+    margin: 16px;
+    width: -webkit-fill-available;
+  }
 }

@@ -8,11 +8,11 @@
             "type": "company",
             "properties": {
               "Incorporation": "21 July, 1515",
-              "Address Street": "292 Station Lane",
-              "Address City": "Las Vegas",
-              "Address State": "NV",
-              "Address Country": "US",
-              "Address Zipcode": "89134"
+              "Addr. Street": "292 Station Lane",
+              "Addr. City": "Las Vegas",
+              "Addr. State": "NV",
+              "Addr. Country": "US",
+              "Addr. Zipcode": "89134"
             }
           }
         ],
@@ -34,9 +34,9 @@
               "Incorporation Date": "14 October 2020 (almost 3 years ago)",
               "Company Type": "Domestic For-Profit Corporation",
               "Jurisdiction": "Texas (US)",
-              "Registered Address": "8623 HEMLOCK HILL DR, HOUSTON, TX 77083-6870, USA",
+              "Registered Addr.": "8623 HEMLOCK HILL DR, HOUSTON, TX 77083-6870, USA",
               "Agent Name": "OSE OYAKHILOME",
-              "Agent Address": "8623 HEMLOCK HILL DRIVE, HOUSTON, TX, 77083, USA",
+              "Agent Addr.": "8623 HEMLOCK HILL DRIVE, HOUSTON, TX, 77083, USA",
               "Directors / Officers": "5 officers available"
             }
           }
@@ -58,9 +58,9 @@
           "Incorporation Date": "24 August, 2021",
           "Company Type": "Domestic Limited Liability Company",
           "Jurisdiction": "Delaware",
-          "Registered Address": "Sussex, DE, USA",
+          "Registered Addr.": "Sussex, DE, USA",
           "Agent Name": "Harvard Business Services Inc",
-          "Agent Address": "16192 Coastal Hwy – Lewes DE 19958",
+          "Agent Addr.": "16192 Coastal Hwy – Lewes DE 19958",
           "Directors / Officers": "1 officer available"
         },
         {
@@ -69,9 +69,9 @@
           "Incorporation Date": "21 July, 2015",
           "Company Type": "Domestic Limited Liability Company",
           "Jurisdiction": "Las Vegas",
-          "Registered Address": "Las Vegas, NV",
+          "Registered Addr.": "Las Vegas, NV",
           "Agent Name": "Privacy Protect",
-          "Agent Address": "292 Station Lane – Las Vegas, NV 89134",
+          "Agent Addr.": "292 Station Lane – Las Vegas, NV 89134",
           "Directors / Officers": "2 officers available"
         },
         {
@@ -80,9 +80,9 @@
           "Incorporation Date": "4 August, 2019",
           "Company Type": "Domestic Limited Liability Company",
           "Jurisdiction": "Florida",
-          "Registered Address": "Tampa Bay, FL",
+          "Registered Addr.": "Tampa Bay, FL",
           "Agent Name": "Free Agent Solutions",
-          "Agent Address": "21292 Blue Street – FL 12122",
+          "Agent Addr.": "21292 Blue Street – FL 12122",
           "Directors / Officers": "1 officer available"
         }
       ],
@@ -93,9 +93,9 @@
           "Incorporation Date": "14 October 2020 (almost 3 years ago)",
           "Company Type": "Domestic For-Profit Corporation",
           "Jurisdiction": "Texas (US)",
-          "Registered Address": "8623 HEMLOCK HILL DR, HOUSTON, TX 77083-6870, USA",
+          "Registered Addr.": "8623 HEMLOCK HILL DR, HOUSTON, TX 77083-6870, USA",
           "Agent Name": "OSE OYAKHILOME",
-          "Agent Address": "8623 HEMLOCK HILL DRIVE, HOUSTON, TX, 77083, USA",
+          "Agent Addr.": "8623 HEMLOCK HILL DRIVE, HOUSTON, TX, 77083, USA",
           "Directors / Officers": "5 officers available"
         },
         {
@@ -104,7 +104,7 @@
           "Dissolution Date": "23 November 2022",
           "Company Type": "Aktiengesellschaft",
           "Jurisdiction": "Switzerland",
-          "Registered Address": "Rue François-Versonnex, 7, Genève, Switzerland, 1207"
+          "Registered Addr.": "Rue François-Versonnex, 7, Genève, Switzerland, 1207"
         }
       ]
     }
@@ -119,11 +119,11 @@
             "src": "https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50.jpg",
             "properties": {
               "Incorporation": "21 July, 2015",
-              "Address Street": "292 Station Lane",
-              "Address City": "Las Vegas",
-              "Address State": "NV",
-              "Address Country": "US",
-              "Address Zipcode": "89134"
+              "Addr. Street": "292 Station Lane",
+              "Addr. City": "Las Vegas",
+              "Addr. State": "NV",
+              "Addr. Country": "US",
+              "Addr. Zipcode": "89134"
             }
           }
         ],
@@ -142,11 +142,11 @@
             "src": "https://s.gravatar.com/avatar/6a9e8fa3fb7f1c4ed26df322fd7998d5b061e647439f9e6bca4205e741dec176",
             "properties": {
               "Incorporation": "21 July, 2015",
-              "Address Street": "292 Station Lane",
-              "Address City": "Las Vegas",
-              "Address State": "NV",
-              "Address Country": "US",
-              "Address Zipcode": "89134"
+              "Addr. Street": "292 Station Lane",
+              "Addr. City": "Las Vegas",
+              "Addr. State": "NV",
+              "Addr. Country": "US",
+              "Addr. Zipcode": "89134"
             }
           }
         ],
@@ -165,11 +165,11 @@
             "src": "https://s.gravatar.com/avatar/dffd122183f037633ec746035c9a46a1ab31c20388c0a04f39fea633f386785f",
             "properties": {
               "Incorporation": "21 July, 2015",
-              "Address Street": "292 Station Lane",
-              "Address City": "Las Vegas",
-              "Address State": "NV",
-              "Address Country": "US",
-              "Address Zipcode": "89134"
+              "Addr. Street": "292 Station Lane",
+              "Addr. City": "Las Vegas",
+              "Addr. State": "NV",
+              "Addr. Country": "US",
+              "Addr. Zipcode": "89134"
             }
           }
         ],
@@ -210,11 +210,11 @@
             "type": "person",
             "properties": {
               "Phone number": "800-555-2323",
-              "address street": "1101 Brickell Avenue",
-              "address city": "Miami",
-              "address state": "FL",
-              "address country": "US",
-              "address zipcode": "33131"
+              "addr. street": "1101 Brickell Avenue",
+              "addr. city": "Miami",
+              "addr. state": "FL",
+              "addr. country": "US",
+              "addr. zipcode": "33131"
             }
           }
         ],
@@ -233,11 +233,11 @@
             "type": "person",
             "properties": {
               "Phone number": "800-555-2323",
-              "address street": "1101 Brickell Avenue",
-              "address city": "Miami",
-              "address state": "FL",
-              "address country": "US",
-              "address zipcode": "33131"
+              "addr. street": "1101 Brickell Avenue",
+              "addr. city": "Miami",
+              "addr. state": "FL",
+              "addr. country": "US",
+              "addr. zipcode": "33131"
             }
           }
         ],
@@ -255,21 +255,21 @@
         {
           "id": "Nikolaos Digrintakis",
           "type": "person",
-          "address": "Stockholm, Sweden",
+          "addr.": "Stockholm, Sweden",
           "title": "55 years old",
           "email": "Unknown"
         },
         {
           "id": "Nick Ntigrintakis",
           "type": "person",
-          "address": "Zurich, Switzerland",
+          "addr.": "Zurich, Switzerland",
           "title": "55 years old",
           "email": "nick@alphaott.com"
         },
         {
           "id": "Nicholas Ntir",
           "type": "person",
-          "address": "Berlin, Germany",
+          "addr.": "Berlin, Germany",
           "title": "26 years old",
           "email": "nicntiri@gmail.com"
         },
@@ -278,7 +278,7 @@
           "type": "person",
           "title": "PR Manager",
           "email": "pr@netwelve.com",
-          "address": "Canada"
+          "addr.": "Canada"
         }
       ]
     }
@@ -293,7 +293,7 @@
             "properties": {
               "host": "Cloudflare, Inc. (CLOUD14)",
               "whois": "Redacted for Privacy",
-              "whois address": "Kalkofnsvegur 2"
+              "whois addr.": "Kalkofnsvegur 2"
             }
           }
         ],
@@ -309,7 +309,8 @@
       "12-1212": [
         {
           "id": "alphaott.com",
-          "Type": "Legitimate"
+          "Status": "Active",
+          "type": "site"
         }
       ]
     }
@@ -330,7 +331,7 @@
         ],
         "links": [
           {
-            "source": "ALPHA OTT INC.",
+            "source": "Zaaptv LLC",
             "target": "zaaptv.com",
             "context": "Reverse Whois lookup performed June 2023"
           }
@@ -361,37 +362,40 @@
       "Zaaptv LLC": [
         {
           "id": "zaaptv.com",
-          "Status": "Active",
-          "Type": "IPTV Service"
+          "type": "site",
+          "Status": "Active"
         },
         {
           "id": "zaaptv.tv",
+          "type": "site",
           "Status": "Inactive"
         }
       ],
       "ALPHA OTT INC.": [
         {
           "id": "cressida.se",
-          "Status": "Active",
-          "Type": "IPTV Service"
+          "type": "site",
+          "Status": "Active"
         },
         {
           "id": "maaxtv.se",
+          "type": "site",
           "Status": "Inactive"
         },
         {
           "id": "alphaott.com",
-          "Status": "Active",
-          "Type": "IPTV Service"
+          "type": "site",
+          "Status": "Active"
         },
         {
           "id": "zaaptv.com",
+          "type": "site",
           "Status": "Inactive"
         }
       ]
     }
   },
-  "tags": {
+  "Tags": {
     "item": {
       "12-1212": {
         "nodes": [
@@ -417,21 +421,81 @@
       "zaaptv.com": [
         {
           "id": "12-1212",
-          "Type": "Google Adsense"
+          "type": "Google Adsense"
         },
         {
           "id": "SE-401",
-          "Type": "Taboola"
+          "type": "Taboola"
         },
         {
           "id": "ab232-1",
-          "Type": "Doubleclick"
+          "type": "Doubleclick"
         },
         {
           "id": "223145",
-          "Type": "Dart"
+          "type": "Dart"
         }
       ]
+    }
+  },
+  "Social media": {
+    "list": {
+      "Nick Ntigrintakis": [
+        {
+          "id": "Nick Ntigrintakis LinkedIn",
+          "name": "Nick Ntigrintakis",
+          "type": "social media",
+          "Domain": "LinkedIn",
+          "URL": "https://www.linkedin.com/in/nick-ntigrintakis/",
+          "Followers": 500
+        },
+        {
+          "id": "Νικος Ντιγριντακης Facebook",
+          "name": "Νικος Ντιγριντακης",
+          "type": "social media",
+          "Domain": "Facebook",
+          "URL": "https://www.facebook.com/profile.php?id=100009494672731",
+          "Followers": 996
+        }
+      ]
+    },
+    "item": {
+      "Νικος Ντιγριντακης Facebook": {
+        "nodes": [
+          {
+            "id": "Νικος Ντιγριντακης Facebook",
+            "type": "social media",
+            "name": "Νικος Ντιγριντακης",
+            "properties": {
+              "Domain": "Facebook"
+            }
+          }
+        ],
+        "links": [
+          {
+            "source": "Nick Ntigrintakis",
+            "target": "Νικος Ντιγριντακης Facebook"
+          }
+        ]
+      },
+      "Nick Ntigrintakis LinkedIn": {
+        "nodes": [
+          {
+            "id": "Nick Ntigrintakis LinkedIn",
+            "type": "social media",
+            "name": "Nick Ntigrintakis",
+            "properties": {
+              "Domain": "LinkedIn"
+            }
+          }
+        ],
+        "links": [
+          {
+            "source": "Nick Ntigrintakis",
+            "target": "Nick Ntigrintakis LinkedIn"
+          }
+        ]
+      }
     }
   }
 }
